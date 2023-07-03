@@ -93,9 +93,17 @@ nav {
   color: #6a6a6a;
   margin: 1.5rem 0rem;
 }
+
+.primary-text-color {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  max-width: 500px;
+  color: #cc370a;
+  margin: 1.5rem 0rem;
+}
+
 .secondary-button {
   padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
+  background-color: #cc370a;
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -127,14 +135,14 @@ nav {
 }
 .primary-subheading {
   font-weight: 700;
-  color: #fe9e0d;
+  color: #cc370a;
   font-size: 1.15rem;
 }
 .about-buttons-container {
   margin-top: 2rem;
   display: flex;
 }
-.contact-page-wrapper h1 {
+.contact-page-wrapper h2 {
   max-width: 900px !important;
 }
 .contact-page-wrapper {
@@ -219,9 +227,9 @@ nav {
 .skills-stars-container svg {
   margin: 0rem 0.25rem;
   font-size: 1.5rem;
-  color: #fe9e0d;
+  color: #cc370a;
 }
-.skills-section-bottom h2 {
+.skills-section-bottom h3 {
   margin-top: 1.5rem;
 }
 .work-section-wrapper {
@@ -231,7 +239,7 @@ nav {
   text-align: center;
   max-width: 600px !important;
 }
-.work-section-top h1 {
+.work-section-top h2 {
   max-width: 700px !important;
 }
 .work-section-top {
@@ -253,12 +261,32 @@ nav {
   border-radius: 1rem;
   color: #505050;
   margin: 1rem 2rem;
-  border-color: #fe9e0d;
+  border-color: #cc370a;
   border-style: solid;
 }
-.work-section-info h2 {
+.work-section-info h3 {
   margin: 1rem 0rem;
 }
+
+.italic-subheading {
+  font-style: italic;
+  line-height: 1.75rem;
+  font-size: 1.75rem;
+}
+
+#invisible {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute!important;
+  border: 0!important;
+  padding: 0!important;
+  margin: 0!important;
+  clip: rect(1px,1px,1px,1px);
+}
+
 .work-section-bottom {
   margin-top: 5rem;
   display: flex;
@@ -320,6 +348,7 @@ nav {
     text-align: center;
     max-width: 80%;
   }
+
   .home-text-section,
   .about-section-text-container {
     justify-content: center;

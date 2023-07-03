@@ -4,8 +4,8 @@ const Skills = () => {
   return (
     <div className='work-section-wrapper'>
         <div className='work-section-top'>
-            <h1 className='primary-heading'>Skills</h1>
-            <h2 className='primary-text'>
+            <h2 className='primary-heading'>Skills</h2>
+            <h3 className='primary-text'>
                 - HTML
                 <br></br>
                 - CSS
@@ -26,7 +26,7 @@ const Skills = () => {
                 <br></br>
                 - Photography/Photo editing
                 <br></br>
-            </h2>
+            </h3>
         </div>
         
     </div>

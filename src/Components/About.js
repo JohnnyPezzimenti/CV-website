@@ -6,15 +6,15 @@ const About = () => {
         <div className='about-section-container'>
 
             <div className='about-section-image-container'>
-                <img src={AboutBackgroundImage} alt='' />
+                <img src={AboutBackgroundImage} alt='Image of a stack of books' />
             </div>
             <div className='about-section-text-container'>
                 <p className='primary-subheading'>About</p>
-                <h1 className='primary-heading'>
+                <h2 className='primary-heading'>
                     Education
-                </h1>
+                </h2>
                 <p className='primary-text'>
-                    <u>Self-Taught Front-End Developer</u>
+                    <h3 className='italic-subheading'>Self-Taught Front-End Developer</h3>
                     <br></br>
                     April 2022 - Present
                     <br></br>
@@ -24,7 +24,7 @@ const About = () => {
                     </p>
                 </p>
                 <p className='primary-text'>
-                    <u>TEFL Worldwide - Prague, Czech Republic</u>
+                    <h3 className='italic-subheading'>TEFL Worldwide - Prague, Czech Republic</h3>
                     <br></br>
                     TEFL Certification, Accredited by latQuo | April 2021
                     <br></br>
@@ -35,7 +35,7 @@ const About = () => {
                     </p>
                 </p>
                 <p className='primary-text'>
-                    <u>Daytona State University</u>
+                    <h3 className='italic-subheading'>Daytona State University</h3>
                     <br></br>
                     Music Production Technology | September 2015
                     <br></br>

@@ -19,14 +19,14 @@ const Work = () => {
     <div className='work-section-wrapper'>
         <div className='work-section-top'>
             
-            <h1 className='primary-heading'>Employment History</h1>
+            <h2 className='primary-heading'>Employment History</h2>
             
         </div>
         <div className='work-section-bottom'>
             {workInfoData.map((data) => (
                 <div className='work-section-info'>
                     
-                        <h2>{data.title}</h2>
+                        <h3>{data.title}</h3>
                         <p>{data.text}</p>
                 </div>
             ))}
