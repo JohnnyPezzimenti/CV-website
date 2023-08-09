@@ -6,9 +6,23 @@ import Skills from './Components/Skills';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar'
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [counter, setCounter] = useState(1);
+
+  useEffect(()=>{
+
+    setCounter(oldState => {
+      const newState = oldState+1;
+      console.log(oldState, 'oldState', newState, 'newState');
+      return newState;
+    });
+    console.log(counter, 'counter');
+  },[]);
+  
   return (
+    counter > 2 ? 
     <div className="App">
       <Home />
       <About />
@@ -16,7 +30,8 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
-    </div>
+    </div> :
+    'loader'
   );
 }
 

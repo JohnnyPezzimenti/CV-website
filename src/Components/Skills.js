@@ -5,7 +5,7 @@ const Skills = () => {
     <div className='work-section-wrapper'>
         <div className='work-section-top'>
             <h2 className='primary-heading'>Skills</h2>
-            <h3 className='primary-text'>
+            <h3 className='primary-text-skills'>
                 - HTML
                 <br></br>
                 - CSS
