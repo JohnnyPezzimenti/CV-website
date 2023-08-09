@@ -22,7 +22,7 @@ function App() {
   },[]);
   
   return (
-    counter < 2 ? 
+    counter > 2 ? 
     <div className="App">
       <Home />
       <About />
