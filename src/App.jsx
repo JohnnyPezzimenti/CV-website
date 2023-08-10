@@ -6,23 +6,24 @@ import Skills from './Components/Skills';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar'
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
   const [counter, setCounter] = useState(1);
 
-  useEffect(()=>{
-
-    setCounter(oldState => {
-      const newState = oldState+1;
-      console.log(oldState, 'oldState', newState, 'newState');
-      return newState;
-    });
-    console.log(counter, 'counter');
+  useEffect(() => {
+    setTimeout(() => {
+      setCounter(oldState => oldState + 1);
+      setIsLoading(false);
+    }, 2000);
   },[]);
+
+  if (isLoading) {
+    return 'loader';
+  }
   
   return (
-    counter > 2 ? 
     <div className="App">
       <Home />
       <About />
@@ -30,8 +31,7 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
-    </div> :
-    'loader'
+    </div>
   );
 }
 
