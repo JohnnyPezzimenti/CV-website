@@ -20,7 +20,7 @@ function App() {
   },[]);
 
   if (isLoading) {
-    return 'loader';
+    return ' l o a d i n g . . . ';
   }
   
   return (
