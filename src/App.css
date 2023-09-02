@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Reem Kufi", sans-serif !important;
 }
+html, body {
+  overflow-x:hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -384,9 +388,7 @@ nav {
     max-width: 90%;
   }
   .primary-text {
-    width: 500px;
     min-height: 350px;
-    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
